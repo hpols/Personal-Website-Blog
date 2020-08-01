@@ -1,0 +1,110 @@
+html {
+	background-color: rgba(0,0,0,1.00);
+}
+body {
+	border: 1pt solid black;
+	margin: auto;
+	max-width: 1000px;
+	background-color: darkred;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	line-height: 1.5em;
+}
+
+header {
+	background-image: -webkit-linear-gradient(270deg,rgba(102,102,102,0.70) 0%,rgba(102,102,102,0.70) 100%), url(../img/header_clef.jpg);
+	background-image: -moz-linear-gradient(270deg,rgba(102,102,102,0.70) 0%,rgba(102,102,102,0.70) 100%), url(../img/header_clef.jpg);
+	background-image: -o-linear-gradient(270deg,rgba(102,102,102,0.70) 0%,rgba(102,102,102,0.70) 100%), url(../img/header_clef.jpg);
+	background-image: linear-gradient(180deg,rgba(102,102,102,0.70) 0%,rgba(102,102,102,0.70) 100%), url(../img/header_clef.jpg);
+	background-size: cover;
+	background-position: 50% 58%;
+	background-repeat: no-repeat;
+	height: auto;
+}
+
+nav {
+	font-weight: 700;
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+	color: darkred;
+	padding: 5px;
+	background-color: rgba(102,102,102,0.50);
+}
+nav ul {
+	display: flex;
+	justify-content: space-around;
+}
+main , aside{
+	margin: 20px auto;
+	width: 80%;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: #FFFFBB;
+	color: darkbrown;
+}
+aside {
+	margin: auto;
+	width: 80%;
+}
+footer {
+	background-color: #666;
+}
+footer p {
+	color: #FFFFBB;
+}
+h1 {
+	margin: 10;
+	text-align: center;
+	color: darkred;
+	font-weight: 700;
+	padding: 10;
+	font-size: 5em;
+	font-variant: small-caps;
+}
+h2 {
+	text-align: center;
+	color: darkred;
+	font-style: italic;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	padding: 10px;
+	font-size: 2em;
+}
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+ul #social {
+	display: flex;
+	flex-direction: row;
+}
+.socialbt {
+	width: 5em;
+	height: 55%
+%;
+	height: 550px
+%;
+	height: 5em;
+}
+header ul , footer ul{
+	list-style: none;
+}
+#ft-action {
+	display: flex;
+}
+#subscribe {
+	margin: 20px;
+}
+#social {
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+}
+#copy {
+	margin: auto;
+	text-align: center;
+}
