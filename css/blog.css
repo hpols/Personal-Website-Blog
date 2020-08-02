@@ -1,0 +1,125 @@
+/* CSS Document */
+
+@import "style.css"; /* Build on the overall style*/
+h3 {
+	color: darkred;
+	font-weight: 300;
+	font-style: italic;
+}
+
+ol li , ul li{
+	list-style-position: inside;
+}
+
+ol ul {
+	padding-left: 1em;
+}
+
+hr {
+	border: medium double darkred;
+}
+
+figure {
+	width: 33%;
+	margin:0 1.2em 0 1em;
+	float: left;
+	text-align: center;
+	font-style: italic;
+	color: rgba(0,0,0,0.75);
+	border: medium double rgba(0,0,0,0.75);
+	padding: 1em;
+	border-radius: 5px;
+	font-size: smaller;
+}
+
+figure img  {
+	width: 100%;
+}
+.quote {
+	font-style: italic;
+	margin: 1em 2em;
+	padding: 1em 0;
+	text-align: center;
+	border-top: medium double rgba(139,0,0,0.30);
+	border-bottom: medium double rgba(139,0,0,0.30);
+}
+.pg-link {
+	margin: auto;
+	text-align: center;
+}
+
+.yt-vid {
+	width: 80%;
+	margin: auto;
+	display: block;
+}
+
+.share-post {
+	border-top: medium double darkred;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: flex-end;
+	margin-top: 1em;
+}
+
+.share-input {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+
+.avatar {
+	width: 100px;
+	float: left;
+	margin-right: 1.2em;
+	margin-bottom: 1em;
+}
+
+.bio-overview {
+	text-decoration: underline;
+	font-style: italic;
+	text-align: center;
+}
+
+/* Hanlde Grid Layout for Medium & large devices*/
+.header {
+	grid-area: hd;
+}
+
+.aside {
+	grid-area: ri;
+}
+
+.main {
+	grid-area: le;
+}
+
+.footer {
+	grid-area: ft;
+}
+
+@media(min-width:700px) and (max-width:1000px){
+	.container {
+		display:grid;
+		grid-template-columns: repeat(8, 1fr);
+		grid-auto-rows: minmax(100px, auto);
+		grid-template-areas: 
+			"hd hd hd hd hd hd hd hd"
+			"le le le le ri ri ri ri" /*le = left; ri = right */
+			"ft ft ft ft ft ft ft ft";
+	}
+}
+
+@media(min-width:1001px){
+	.container {
+		display:grid;
+		grid-template-columns: repeat(8, 1fr);
+		grid-auto-rows: minmax(100px, auto);
+		grid-template-areas: 
+			"hd hd hd hd hd hd hd hd"
+			"le le le le le ri ri ri"
+			"ft ft ft ft ft ft ft ft";
+	}
+}

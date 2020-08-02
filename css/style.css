@@ -3,7 +3,7 @@ html {
 }
 body {
 	border: 1pt solid black;
-	margin: auto;
+	margin: 0 auto;
 	max-width: 1000px;
 	background-color: darkred;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
@@ -28,12 +28,9 @@ nav {
 	text-transform: uppercase;
 	color: darkred;
 	padding: 5px;
-	background-color: rgba(102,102,102,0.50);
+background-color: rgba(102,102,102,0.50);
 }
-nav ul {
-	display: flex;
-	justify-content: space-around;
-}
+
 main , aside{
 	margin: 20px auto;
 	width: 80%;
@@ -42,16 +39,31 @@ main , aside{
 	background-color: #FFFFBB;
 	color: darkbrown;
 }
-aside {
-	margin: auto;
-	width: 80%;
-}
+
 footer {
 	background-color: #666;
+}
+
+nav a {
+	color: darkred;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
 }
 footer p {
 	color: #FFFFBB;
 }
+footer img {
+	padding: 0 10px;
+	width: 50px;
+}
+a {
+	color: red;
+	font-weight: lighter;
+}
+
 h1 {
 	margin: 10;
 	text-align: center;
@@ -61,7 +73,15 @@ h1 {
 	font-size: 5em;
 	font-variant: small-caps;
 }
+
 h2 {
+	color: darkred;
+	font-weight: 700;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+h6 {
 	text-align: center;
 	color: darkred;
 	font-style: italic;
@@ -72,38 +92,44 @@ h2 {
 	padding: 10px;
 	font-size: 2em;
 }
+
 a:link {
 	text-decoration: none;
 }
+
 a:hover {
 	text-decoration: underline;
 }
-ul #social {
-	display: flex;
+
+.socialbt {
+	width: 50px;
+	height: 50px;
 	flex-direction: row;
 }
-.socialbt {
-	width: 5em;
-	height: 55%
-%;
-	height: 550px
-%;
-	height: 5em;
-}
+
 header ul , footer ul{
 	list-style: none;
 }
+
 #ft-action {
 	display: flex;
+	justify-content: space-between;
 }
+
 #subscribe {
 	margin: 20px;
 }
+
 #social {
 	margin: 20px;
 	display: flex;
 	flex-direction: row;
+	text-align: center;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-content: flex-end;
 }
+
 #copy {
 	margin: auto;
 	text-align: center;

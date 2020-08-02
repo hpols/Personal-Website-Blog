@@ -1,67 +1,60 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>MusGym</title>
-    <link rel="stylesheet" href="css/style.css"/>
+	<meta charset="UTF-8">
+	<title>MusGym</title>
+	<link rel="stylesheet" href="css/home.css"/>
 </head>
 
-<body>
-    <header>
-        <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>Latest Blog Post</li>
-            <li><a href="index.html#social">Social Media</a></li>
-          </ul>
-        </nav>
-        <h1>MusGym</h1>
-        <h2>Musical Games &amp; Exercises</h2>
-    </header>
-    <main>
-        <p>Music should be fun, both for the musicians and for the listeners. That’s why I want to offer small games and exercises to make music more accessible to you in a playful way. You do not always have to take the instrument to hand. Do not only play music … play with the music.</p>
-        <p>Whether you want to work on a specific aspect or just want to try something new, this site will offer you suggestions and possibilities to discover your inner musician with joy.</p>
-        <p>Explore the exercises (more to come, so keep checking back):</p>
-    </main>
-    <aside>
-      <h3>Finger/Motorics</h3>
-        <ul>
-           <li>Happy Fingers</li>
-           <li>Learning Notes</li>  
-        </ul>
-        <h3>Breathing</h3>
-        <ul>
-            <li>Relaxed Breathing</li>
-            <li>Exploring Your Breath</li>
-        </ul>    
-        <h3>Music Theory</h3>
-        <ul>
-            <li>Moving Music Memory</li>
-            <li>Learning Notes</li>
-        </ul>
-    </aside>
+<body class="container">
+	<header class="header">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="posts/exploring_your_breath.html">Latest Blog Post</a></li>
+				<li><a href="index.html#social">Social Media</a></li>
+			</ul>
+		</nav>
+		<h1>MusGym</h1>
+		<h6>Musical Games &amp; Exercises</h6>
+	</header>
+	<aside class="aside">
+		<p>Music should be fun, both for the musicians and for the listeners. That’s why I want to offer small games and exercises to make music more accessible to you in a playful way. You do not always have to take the instrument to hand. Do not only play music … play with the music.</p>
+		<p>Whether you want to work on a specific aspect or just want to try something new, this site will offer you suggestions and possibilities to discover your inner musician with joy.</p>
+		<p>Explore the exercises (more to come, so keep checking back):</p>
+	</aside>
+	<main class="main">
+		<h2>Motorics</h2>
+		<ul class="categories">
+			<li class="card"><a href="posts/happy_fingers.html"><img src="img/relaxed_hand.png" alt="relaxed hand" class="card-img">Happy Fingers</a></li>
+			<li class="card"><a href="posts/tonguing_fun.html"><img src="img/tongue-fun.gif" alt="tonguing fun" class="card-img">Tonguing Fun</a></li>  
+		</ul>
+		<h2>Breathing</h2>
+		<ul class="categories">
+			<li class="card"><a href="posts/relaxed_breathing.html"><img src="img/relaxed_breathing.png" alt="exploring full body breathing" class="card-img">Relaxed Breathing</a></li>
+			<li class="card"><a href="posts/exploring_your_breath.html"><img src="img/puppy_breathing.png" alt="hand exploring a puppies breath" class="card-img">Exploring Your Breath</a></li>
+		</ul>    
+	</main>
+	<footer class="footer">
+		<div id="ft-action">
+			<div id="subscribe">
+				<p>Subscribe to receive email updates:</p>
+				<form>
+					<label for="name">Name: </label><input type="name" id="name">
+					<label for="email">Email: </label><input type="email" id="email">
+					<input type="submit"> <!-- this button will not yet work. It needs some javascript -->
+				</form>
+			</div>
+			<div id="social">
+			<p>Find me on social media:</p>
+				<a href="https://www.facebook.com/hilde.pols"><img src="img/facebook_icon.png" alt="link to Facebook"  class="socialbt"></a>
+				<a href="https://twitter.com/atschpe"><img src="img/twitter_icon.png" alt="link to Twitter"  class="socialbt"></a>
+				<a href="https://www.linkedin.com/in/hildepols/"><img src="img/linkedin_icon.png" alt="link to LinkedIn"  class="socialbt"></a>
+			</div>
+		</div>
+		<div id="copy">
+			<p>Copyright &copy; 2020 – Hilde Pols</p>
+		</div>
+	</footer>
 </body>
-<footer>
-    <div id="ft-action">
-        <div id="subscribe">
-            <p>Subscribe to receive the latest posts per email:</p>
-            <form>
-                <input type="email">
-                <input type="submit">
-            </form>
-        </div>
-        <div id="social">
-            <p>Find me on social media:</p>
-            <ul>
-                <li><a href="https://www.facebook.com/hilde.pols"><img src="img/facebook_icon.png" alt="link to Facebook" class="socialbt"></a></li>
-                <li><a href="https://twitter.com/atschpe"><img src="img/twitter_icon.png" alt="link to Twitter"  class="socialbt"></a></li>
-                <li><a href="https://www.linkedin.com/in/hildepols/"><img src="img/linkedin_icon.png" alt="link to LinkedIn" class="socialbt"></a></li>
-            </ul>
-        </div>
-    </div>
-    <div id="copy">
-    <p>Copyright &copy; 2020 – Hilde Pols</p>
-        </div>
-    
-</footer>
 </html>
