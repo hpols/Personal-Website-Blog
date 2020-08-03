@@ -1,6 +1,7 @@
 html {
 	background-color: rgba(0,0,0,1.00);
 }
+
 body {
 	border: 1pt solid black;
 	margin: 0 auto;
@@ -11,10 +12,10 @@ body {
 }
 
 header {
-	background-image: -webkit-linear-gradient(270deg,rgba(102,102,102,0.70) 0%,rgba(102,102,102,0.70) 100%), url(../img/header_clef.jpg);
-	background-image: -moz-linear-gradient(270deg,rgba(102,102,102,0.70) 0%,rgba(102,102,102,0.70) 100%), url(../img/header_clef.jpg);
-	background-image: -o-linear-gradient(270deg,rgba(102,102,102,0.70) 0%,rgba(102,102,102,0.70) 100%), url(../img/header_clef.jpg);
-	background-image: linear-gradient(180deg,rgba(102,102,102,0.70) 0%,rgba(102,102,102,0.70) 100%), url(../img/header_clef.jpg);
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,187,0.70) 0%,rgba(255,255,187,0.70) 100%), url(../img/header_clef.jpg);
+	background-image: -moz-linear-gradient(270deg,rgba(255,255,187,0.70) 0%,rgba(255,255,187,0.70) 100%), url(../img/header_clef.jpg);
+	background-image: -o-linear-gradient(270deg,rgba(255,255,187,0.70) 0%,rgba(255,255,187,0.70) 100%), url(../img/header_clef.jpg);
+	background-image: linear-gradient(180deg,rgba(255,255,187,0.70) 0%,rgba(255,255,187,0.70) 100%), url(../img/header_clef.jpg);
 	background-size: cover;
 	background-position: 50% 58%;
 	background-repeat: no-repeat;
@@ -28,7 +29,6 @@ nav {
 	text-transform: uppercase;
 	color: darkred;
 	padding: 5px;
-background-color: rgba(102,102,102,0.50);
 }
 
 main , aside{
@@ -40,10 +40,6 @@ main , aside{
 	color: darkbrown;
 }
 
-footer {
-	background-color: #666;
-}
-
 nav a {
 	color: darkred;
 }
@@ -52,13 +48,16 @@ nav ul {
 	display: flex;
 	justify-content: space-around;
 }
-footer p {
+
+footer {
 	color: #FFFFBB;
 }
+
 footer img {
 	padding: 0 10px;
 	width: 50px;
 }
+
 a {
 	color: red;
 	font-weight: lighter;
@@ -81,24 +80,21 @@ h2 {
 	text-align: center;
 }
 
-h6 {
-	text-align: center;
-	color: darkred;
-	font-style: italic;
-	margin-top: 10px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 20px;
-	padding: 10px;
-	font-size: 2em;
-}
-
 a:link {
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: underline;
+}
+
+.subtitle {
+	text-align: center;
+	color: darkred;
+	font-style: italic;
+	margin: 10px auto 20px auto;
+	padding: 10px;
+	font-size: 2em;
 }
 
 .socialbt {

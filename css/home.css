@@ -10,15 +10,16 @@ main ul, footer ul{
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+
 .card {
 	border-radius: 5px;
-	border: medium double darkred;
 	text-align: center;
 	width: 40%;
 	padding: 10px;
 	margin: 10px;
 	justify-content: space-between;
 }
+
 .card-img {
 	width: 100%;
 	height: auto;
@@ -48,7 +49,7 @@ main ul, footer ul{
 		grid-auto-rows: minmax(100px, auto);
 		grid-template-areas: 
 			"hd hd hd hd hd hd hd hd"
-			"le le le le le le ri ri" /*le = left; ri = right */
+			"le le ri ri ri ri ri ri" /*le = left; ri = right */
 			"ft ft ft ft ft ft ft ft";
 	}
 }
